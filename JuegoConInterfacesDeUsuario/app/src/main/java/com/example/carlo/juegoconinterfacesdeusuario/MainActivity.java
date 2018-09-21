@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -30,19 +31,34 @@ public class MainActivity extends AppCompatActivity {
         // Botón siguiente
         Button btnNext = (Button) findViewById(R.id.btnNext);
         final TextView cntP = (TextView) findViewById(R.id.cntP);
+        final TextView prgnt = (TextView) findViewById(R.id.prgnt);
+        final RadioButton rpst1 = (RadioButton) findViewById(R.id.rpst1);
+        final RadioButton rpst2 = (RadioButton) findViewById(R.id.rpst2);
+        final RadioButton rpst3 = (RadioButton) findViewById(R.id.rpst3);
+        prgnt.setText(lista_preguntas[0].getPregunta());
+        rpst1.setText(lista_preguntas[0].getRespuesta1());
+        rpst2.setText(lista_preguntas[0].getRespuesta2());
+        rpst3.setText(lista_preguntas[0].getRespuesta3());
         btnNext.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                pasarDePregunta(cntP);
+                pasarDePregunta(cntP, prgnt, rpst1, rpst2, rpst3);
             }
         });
+
 
     }
 
 
-    private void pasarDePregunta(TextView cntP){
+    private void pasarDePregunta(TextView cntP, TextView prgnt, RadioButton rpst1, RadioButton rpst2, RadioButton rpst3){
         String texto = "Pregunta "+contadorPreguntas;
         contadorPreguntas++;
         cntP.setText(texto);
+        if(contadorPreguntas==5)
+            contadorPreguntas=0;
+        prgnt.setText(lista_preguntas[contadorPreguntas].getPregunta());
+        rpst1.setText(lista_preguntas[contadorPreguntas].getRespuesta1());
+        rpst2.setText(lista_preguntas[contadorPreguntas].getRespuesta2());
+        rpst3.setText(lista_preguntas[contadorPreguntas].getRespuesta3());
 
     }
 }

@@ -17,12 +17,43 @@
         android:text="Pregunta 1" />
 
 
+    // Muestra las preguntas y las respuestas
+    <RadioGroup
+        android:id="@+id/grpPrgnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/prgnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rpst1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rpst2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rpst3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
     // Botón para pasar de pregunta
     <Button
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SIGUIENTE"/>
+        android:text="@string/SIGUIENTE"
+        android:layout_gravity="bottom"/>
 
 
 
