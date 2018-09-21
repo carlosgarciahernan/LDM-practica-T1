@@ -11,7 +11,7 @@
     
     - Crear las preguntas y cargarlas [Hecho]
     
-    - Crear el objeto preguntas con RadioButton [Pendiente]
+    - Crear el objeto preguntas con RadioButton [Hecho]
     
     - Cargar y eliminar las preguntas al pulsar el botón siguiente [Pendiente]
     
