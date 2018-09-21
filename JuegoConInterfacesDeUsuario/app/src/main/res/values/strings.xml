@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Juego con interfaces de usuario</string>
+    <string name="SIGUIENTE">SIGUIENTE</string>
 </resources>

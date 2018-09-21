@@ -7,9 +7,22 @@
 
     // Muestra la pregunta por la que va el jugador
     <TextView
-        android:id="@+id/contadorPreguntas"
+        android:id="@+id/cntP"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#4FC3F7"
+        android:typeface="serif"
+        android:text="Pregunta 1" />
+
+
+    // Botón para pasar de pregunta
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SIGUIENTE"/>
 
 
 
