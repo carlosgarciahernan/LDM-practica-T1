@@ -13,11 +13,10 @@
     
     - Crear el objeto preguntas con RadioButton [Hecho]
     
-    - Cargar y eliminar las preguntas al pulsar el botón siguiente [Pendiente]
+    - Cargar y eliminar las preguntas al pulsar el botón siguiente [Hecho]
     
     - Contabilizar los puntos [Pendiente]
     
-    - Crear el Activity para los puntos [Pendiente]
 
 3- Crear otra activadad para la puntuación del juego
 
