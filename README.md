@@ -15,13 +15,15 @@
     
     - Cargar y eliminar las preguntas al pulsar el botón siguiente [Hecho]
     
-    - Contabilizar los puntos [Pendiente]
+    - Contabilizar los puntos [Hecho]
     
 
-3- Crear otra activadad para la puntuación del juego
+3- Crear otra activadad para la puntuación del juego [Hecho]
 
-4- Dar la posibilidad de comenzar una nueva tanda del juego
+4- Dar la posibilidad de comenzar una nueva tanda del juego [Hecho]
 
-5- Añadir otros controles (RadioButton, listView, Spinner, etc)
+5- Añadir otros controles (RadioButton, listView, Spinner, etc) [Hecho]
 
-6- Añadir opciones de respuesta que contienen imágenes
+6- Añadir opciones de respuesta que contienen imágenes [Pendiente]
+
+7- Añadir detalles estéticos [Pendiente]
