@@ -7,22 +7,25 @@ public class PreguntaQuiz {
     private String respuesta1;
     private String respuesta2;
     private String respuesta3;
+    private int solucion;
 
 
-    public PreguntaQuiz(String pregunta, String imagen, String respuesta1, String respuesta2, String respuesta3){
+    public PreguntaQuiz(String pregunta, String imagen, String respuesta1, String respuesta2, String respuesta3, int solucion){
         this.pregunta = pregunta;
         this.imagen = imagen;
         this.respuesta1 = respuesta1;
         this.respuesta2 = respuesta2;
         this.respuesta3 = respuesta3;
+        this.solucion = solucion;
     }
 
-    public PreguntaQuiz(String pregunta, String respuesta1, String respuesta2, String respuesta3){
+    public PreguntaQuiz(String pregunta, String respuesta1, String respuesta2, String respuesta3, int solucion){
         this.pregunta = pregunta;
         this.imagen = "0";
         this.respuesta1 = respuesta1;
         this.respuesta2 = respuesta2;
         this.respuesta3 = respuesta3;
+        this.solucion = solucion;
     }
 
     public String getImagen() {
@@ -65,4 +68,11 @@ public class PreguntaQuiz {
         this.respuesta3 = respuesta3;
     }
 
+    public int getSolucion(){
+        return this.solucion;
+    }
+
+    public void setSolucion(int solucion){
+        this.solucion=solucion;
+    }
 }
